@@ -1,7 +1,8 @@
 name: cicd pipeline
+
 on:
   schedule: 
-    - cron: '0 * * * *'   # after every 5 min
+    - cron: '1 * * * *'   # after every 5 min
 
 jobs:
   pull-latest-model:   
