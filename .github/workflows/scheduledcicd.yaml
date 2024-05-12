@@ -1,0 +1,28 @@
+name: cicd pipeline
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '5 * * * *'   # after every 5 min
+
+jobs:
+  pull-latest-model:   
+    name: test schedule cicd feature         
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12' # install the python version needed
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Print Statement          # for debuging purpoer
+        run: python ./main/testing.py
