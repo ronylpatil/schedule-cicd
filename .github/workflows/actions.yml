@@ -3,7 +3,7 @@ name: scheduled-pipeline
 on:
   schedule: 
     # - cron: '*/32 08 * * *'   # after every 5 min
-    - cron: '31 3 * * *' 
+    - cron: '35 3 * * *' 
 
 jobs:
   pull-latest-model:   
