@@ -4,8 +4,8 @@ on:
   schedule: 
     # by default the time will be in UTC, don't forget to convert it into
     # IST. Add +5:30 in time to 
-    - cron: '*/5 * * * *'   # after every 5 min
-    # - cron: '17 5 * * *'
+    # - cron: '*/10 * * * *'   # after every 5 min
+    - cron: '17 5 * * *'
   push:
     branches:
       - main
