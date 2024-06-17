@@ -1,1 +1,1 @@
-print('testing scheduled cicd feature')
+print('testing scheduled cicd pipeline')
