@@ -1,4 +1,3 @@
-import os
 import datetime
 
 def update_readme(file_path, marker, new_content):
